@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayPro - Seamless Fintech Innovation for Digital India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar container">
+    <div class="logo">
+      <span class="mark">P</span>PayPro
+    </div>
+    <nav>
+      <button class="burger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#testimonials">Who It's For</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#cta">Try Free</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" id="particles-js"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-left" data-aos="fade-up">
+          <h1>India’s #1 Platform for Payments & Invoicing</h1>
+          <p class="tagline">Empowering Every Transaction. Elevating Every Business.</p>
+          <p>Seamless Fintech Innovation for Digital India</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-primary">Launch Your Fintech Journey</a>
+          </div>
+        </div>
+        <div class="illustration" data-aos="zoom-in">
+          <img src="https://img.freepik.com/free-vector/flat-people-holding-euro-dollar-coins_88138-759.jpg" 
+               alt="Young professionals using payment dashboards" />
+        </div>
+      </div>
+      <div class="counters stagger" data-aos="fade-up" data-aos-delay="200">
+        <div class="counter">
+          <span class="num" data-end="5000" data-duration="1600">0</span>+
+          <p class="label">Total Customers</p>
+          <div class="shine"></div>
+        </div>
+        <div class="counter">
+          <span class="num" data-end="1000000" data-duration="1600">0</span>+
+          <p class="label">Transactions Processed</p>
+          <div class="shine"></div>
+        </div>
+        <div class="counter">
+          <span class="num" data-end="1000" data-duration="1600">0</span>+
+          <p class="label">SMBs Onboarded</p>
+          <div class="shine"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features container" data-aos="fade-up">
+    <h2>What Makes PayPro Magical</h2>
+    <div class="features-grid stagger">
+      <div class="feature-card neon-hover" data-aos="zoom-in" data-aos-delay="100">
+        <div class="feature-icon"><i class="fas fa-globe"></i></div>
+        <h3>Multi-Currency Payments</h3>
+        <p class="feature-desc">Supports 100+ currencies with real-time conversion.</p>
+      </div>
+      <div class="feature-card neon-hover" data-aos="zoom-in" data-aos-delay="200">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>AI Fraud Detection</h3>
+        <p class="feature-desc">Real-time alerts to secure every transaction.</p>
+      </div>
+      <div class="feature-card neon-hover" data-aos="zoom-in" data-aos-delay="300">
+        <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h3>Automated Billing</h3>
+        <p class="feature-desc">GST-compliant invoices in seconds.</p>
+      </div>
+      <div class="feature-card neon-hover" data-aos="zoom-in" data-aos-delay="400">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Analytics Dashboard</h3>
+        <p class="feature-desc">Track trends with interactive charts.</p>
+      </div>
+      <div class="feature-card neon-hover" data-aos="zoom-in" data-aos-delay="500">
+        <div class="feature-icon"><i class="fas fa-undo-alt"></i></div>
+        <h3>Refund Management</h3>
+        <p class="feature-desc">Easy resolutions with one-click.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats container" data-aos="fade-up">
+    <h2>Show the Power</h2>
+    <div class="stats-grid stagger">
+      <div class="stat-card slide-in-left" data-aos="flip-left">
+        <div class="chart-wrap">
+          <canvas id="usersChart"></canvas>
+        </div>
+        <h3>Active Users</h3>
+        <p>5000+ and growing</p>
+      </div>
+      <div class="stat-card slide-in-left" data-aos="flip-left" data-aos-delay="100">
+        <div class="chart-wrap">
+          <canvas id="revenueChart"></canvas>
+        </div>
+        <h3>Revenue Growth</h3>
+        <p>150% YoY</p>
+      </div>
+      <div class="stat-card slide-in-left" data-aos="flip-left" data-aos-delay="200">
+        <div class="chart-wrap">
+          <canvas id="tpsChart"></canvas>
+        </div>
+        <h3>Transactions per Second</h3>
+        <p>100+ TPS</p>
+      </div>
+    </div>
+    <button id="demo-toggle" class="btn btn-outline">Toggle Demo Mode</button>
+    <div class="bar-graph is-hidden">
+      <div class="bar"><div class="value">78%</div></div>
+      <div class="bar"><div class="value">62%</div></div>
+      <div class="bar"><div class="value">92%</div></div>
+      <div class="bar"><div class="value">55%</div></div>
+      <div class="bar"><div class="value">70%</div></div>
+      <div class="bar"><div class="value">84%</div></div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials container" data-aos="fade-up">
+    <h2>Real Stories, Real Impact</h2>
+    <div class="testimonial-carousel stagger">
+      <div class="testimonial">
+        <img src="https://images.unsplash.com/photo-1560250056-07ba64631f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="Rajesh" class="avatar" />
+        <p class="rating">★★★★★</p>
+        <p>"Transformed our invoicing!"</p>
+        <p class="author">- Rajesh, Freelancer</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://images.unsplash.com/photo-1570545889512-9edd70d12997?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="Priya" class="avatar" />
+        <p class="rating">★★★★★</p>
+        <p>"Game-changer for e-commerce."</p>
+        <p class="author">- Priya, SMB Owner</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://images.unsplash.com/photo-1554774853-7193b9b1955f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="Amit" class="avatar" />
+        <p class="rating">★★★★★</p>
+        <p>"Seamless integrations."</p>
+        <p class="author">- Amit, Enterprise Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section id="demo" class="demo container" data-aos="fade-up">
+    <h2>See It in Action</h2>
+    <div class="dashboard-mockup">
+      <img src="https://img.freepik.com/free-vector/gradient-dashboard-template_23-2149230022.jpg" 
+           alt="Dashboard Mockup" data-aos="zoom-in" />
+      <div class="hotspot" style="top: 20%; left: 30%;" data-tooltip="Analytics Panel"></div>
+      <div class="hotspot" style="top: 50%; left: 70%;" data-tooltip="Payment Gateway"></div>
+    </div>
+    <a href="#" class="try-demo btn btn-primary">Try Demo</a>
+  </section>
+
+  <!-- Security Section -->
+  <section id="security" class="security container" data-aos="fade-up">
+    <h2>Built for Trust</h2>
+    <p>Your data is protected with military-grade encryption.</p>
+    <div class="security-icons stagger">
+      <i class="fas fa-shield-alt pulse"></i>
+      <i class="fas fa-lock pulse"></i>
+      <i class="fas fa-fingerprint pulse"></i>
+    </div>
+  </section>
+
+  <!-- Call-to-Action -->
+  <section id="cta" class="cta container cta-outline" data-aos="fade-up">
+    <div class="cta-content">
+      <h2>Ready to Elevate Your Business?</h2>
+      <p>Start Your PayPro Journey Today.</p>
+      <a href="https://paypro.com" class="btn btn-primary" id="cta-final">Try PayPro Free</a>
+    </div>
+    <img src="https://img.freepik.com/free-vector/cute-robot-holding-money-bag-cartoon-vector-icon-illustration-technology-finance-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3721.jpg" 
+         alt="Fintech Mascot" class="mascot float-slow" data-aos="zoom-in" />
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="footer-content">
+      <p>© 2025 PayPro. Proudly Made in Digital India.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <form class="newsletter">
+        <input type="email" placeholder="Subscribe to Newsletter" aria-label="Email for newsletter" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <button id="chatbot" aria-label="Open chatbot">
+    <i class="fas fa-robot"></i>
+  </button>
+  <div class="chat-window">
+    <p>Hello! How can I help?</p>
+    <input type="text" placeholder="Type your message..." aria-label="Chatbot input" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
